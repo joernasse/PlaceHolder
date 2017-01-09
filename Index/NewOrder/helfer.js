@@ -74,11 +74,10 @@ var handlers = {
 	// add further handlers here
 };
 
-function updateDestination(response) {
+function updateHelfer(response) {
 	document.getElementById('elektriker').value = response.Elektriker;
 	document.getElementById('sonstigeHelfer').value = response.SonstigeHelfer;
-
-
+}
 function nextPage(response) {
 }
 function previousPage(response) {

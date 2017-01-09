@@ -125,5 +125,3 @@ function nextPage(response) {
 function previousPage(response) {
 	put(response, {"back" : "true"});
 }
-
-

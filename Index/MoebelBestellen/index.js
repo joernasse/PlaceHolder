@@ -75,16 +75,17 @@ var handlers = {
 };
 
 function updateDestination(response) {
+	document.getElementById('name').value = response.Name;
 	document.getElementById('str').value = response.StrUndNummer;
 	document.getElementById("plz").value = response.Plz;
 	document.getElementById("ort").value = response.Ort;
 	document.getElementById("land").value = response.Land;
 }
 
-/*function nextPage(response) {
+function nextPage(response) {
 }
 function previousPage(response) {
-}*/
+}
 
 
 
