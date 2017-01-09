@@ -2,146 +2,30 @@
 <!-- saved from url=(0084)file:///C:/Users/Christopher/Documents/GitHub/PlaceHolder/Index/NewOrder/moebel.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="file:///C:/Users/Christopher/Documents/GitHub/PlaceHolder/Index/NewOrder/gui.js"></script>
-<style>
-
-
-.flexgros-container {
-    display: -webkit-flex;
-    flex-direction: row;
-
-    
-    width: 1200px;
-    height: 500px;
-  
-	margin-top: 200px;
-    background-color:white;
-	text-align:center;
-	margin-left: auto;
-    margin-right: auto;
-	
-	
-}
-
-.flex-container {
-    display: -webkit-flex;
-	display: block;
-    flex-direction: row;
-   
-    width: 500px;
-    height: 200px;
-    background-color: white;
-	margin: 5px;
-    
-	text-align:center;
-	margin-left: auto;
-    margin-right: auto;
-	
-}
-
-.flex2-container {
-    display: -webkit-flex;
-    display: block;
-
-    width: 400px;
-    height: 200px;
-    background-color: white;
-	margin: 5px;
-    
-	text-align:center;
-	margin-left: auto;
-    margin-right: auto;
-	
-	
-}
-
-
-.input{
-	width 10px;
-
-
-
-
-}
-
-.sep-container{
-	
-	height:40px;
-	width: 500px;
-	margin:5px
-	text-align:center;
-
-
-}
-
-.flex-titel {
-    background-color: green;
-    width: 600px;
-    height: 150px;
-    margin: 10px;
-	text-align: center;
-}
-
-.flex-temp {
-    background-color: green;
-    width: 150px;
-    height: 50px;
-    margin: auto;
-	text-align: center;
-	font-size: 18px;
-}
-.flex-temp2 {
-    background-color: green;
-    width: 200px;
-    height: 50px;
-    margin: auto;
-	text-align: center;
-	font-size: 22px;
-	font-color: darkred
-}
-
-.flex-rest {
-    background-color: green;
-    width: 460px;
-    height: 100px;
-    margin: 10px;
-	text-align: center;
-	font-size: 30px;
-	
-}
-.flex-icon {
-    background-color: green;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-	text-align: center;
-	font-size: 22px;
-}
-
-.button{
-	width: 100px;
-    height: 45px;
-    margin: 5px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	/*align-content: center;*/
-
-	
-}
-
-
-</style></head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
 
 
 
 
 <body>
 
+<div class="flex-head">
+<div class="flex-headitem">Start</div>
+<div class="flex-headitem">Ziel</div>
+<div class="flex-headitem" style="background:green">Möbel</div>
+<div class="flex-headitem">Fahrzeug</div>
+<div class="flex-headitem">Helfer</div>
+<div class="flex-headitem">Utensilien</div>
+<div class="flex-headitem">Bestätigen</div>
+</div>
+<!-- Diesen obenren Block hier oben einfach Kopieren für die Kopfzeile PART2-->
+
 <center><h1>Möbel auswählen</h1></center>
 
 <div class="flexgros-container">
 
-	<div class="flex-container">
+	<div class="flexM-container">
 	
 		<div class="sep-container">Stuhl:    klein      <b>-</b> <input type="text" name="stuhlklein" style="width:10px"> <b>+</b> /  mittel <b>-</b>  <input type="text" name="stuhlmittel" style="width:10px"> / groß <b>-</b>  <input type="text" name="stuhlgroß" style="width:10px">  <b>+</b> <br> </div>
 		<div class="sep-container">Tisch:klein <b>-</b> <input type="text" name="tischklein" style="width:10px"> <b>+</b> /  mittel <b>-</b>  <input type="text" name="tischmittel" style="width:10px"> / groß <b>-</b>  <input type="text" name="tischgroß" style="width:10px"> <b>+</b>  <br></div>
@@ -160,6 +44,18 @@
 	</div>
 
 </div>
+
+<div class="flex-head">
+<div class="flex-headitem"><button class=button type=button onclick="location.href='Ziel.html'">Zurück</button></div>
+<div class="flex-headitem"></div>
+<div class="flex-headitem"></div>
+<div class="flex-headitem"></div>
+<div class="flex-headitem"></div>
+<div class="flex-headitem"></div>
+<div class="flex-headitem"><button class=button type=button onclick="location.href='fahrzeug.html'">Weiter</button></div>
+</div>
+
+<!-- Der Block hier oben ist für die Zurück und Weiter Knöpfe -->
 
 
 

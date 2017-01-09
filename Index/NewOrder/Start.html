@@ -1,62 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="gui.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-<style>
-.flex-head {
-    display: -webkit-flex;
-	flex-direction: row;
-    width: 1000px;
-    height: 60px;
-    background-color: white;
-	margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.flex-headitem {
-    display: -webkit-flex;
-    width: 100px;
-    height: 50px;
-    background-color: white;
-	margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-	text-align: center;
-
-	
-}
-
-<!-- Diesen obenren beiden flex container hier oben einfach Kopieren für die Kopfzeile PART1-->
-
-.flex-container {
-    display: -webkit-flex;
-	flex-direction: row;
-    width: 1000px;
-    height: 500px;
-    background-color: white;
-	margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-	
-}
-
-.flex-temp {
-    background-color: white;
-    width: 300px;
-    height: 200px;
-    margin: auto;
-	text-align: center;
-	align-content: right;
-	text-align: right;
-}
-
-
-</style>
 
 
 <body>
@@ -90,13 +37,13 @@
 </div>
 
 <div class="flex-head">
-<div class="flex-headitem"><button>Zurück</button></div>
+<div class="flex-headitem"><button class=button type=button onclick="location.href='../index.html'">Zurück</button></div>
 <div class="flex-headitem"></div>
 <div class="flex-headitem"></div>
 <div class="flex-headitem"></div>
 <div class="flex-headitem"></div>
 <div class="flex-headitem"></div>
-<div class="flex-headitem"><button>Weiter</button></div>
+<div class="flex-headitem"><button class=button type=button onclick="location.href='Ziel.html'">Weiter</button></div>
 </div>
 
 <!-- Der Block hier oben ist für die Zurück und Weiter Knöpfe -->

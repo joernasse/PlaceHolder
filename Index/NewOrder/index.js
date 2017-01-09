@@ -81,10 +81,15 @@ function updateDestination(response) {
 	document.getElementById("land").value = response.Land;
 }
 
-/*function nextPage(response) {
+function test(){
+	location.href='Ziel.html';
+	console.log("hi");
+}
+
+function nextPage(response) {
 }
 function previousPage(response) {
-}*/
+}
 
 
 
