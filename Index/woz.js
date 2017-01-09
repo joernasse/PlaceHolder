@@ -95,12 +95,29 @@ var dbname = "placeholder";
 var dburl = "http://127.0.0.1:5984/" + dbname + "/";
 var handlers = {
 	"destination" : setDestination,
+	"moebel" : setMoebel,
+	"helfer" : setHelfer,
+	"utilities" : setUtilities,
+	"summary" : setSummary,
 	"next" : nextPage,
 	"back" : previousPage,
 	// add further handlers here
 };
 function setDestination(response) {
-	put(response, {"StrUndNummer" : "Welfengarten 1", "Plz" : "30167", "Ort" : "Hannover", "Land" : "Deutschland"});
+	put(response, {"Name" : "Max Mustermann", "StrUndNummer" : "Welfengarten 1", "Plz" : "30167", "Ort" : "Hannover", "Land" : "Deutschland"});
+}
+function setMoebel(response) {
+	put(response, {"StuhlS" : "2", "TischM" : "1", "TischB" : "2", "KartonS" : "17", "KartonB" : "10"});
+}
+function setHelfer(response) {
+	put(response, {"Elektriker" : "1", "SonstigeHelfer" : "1 Entertainer"});
+}
+function setUtilities(response) {
+	put(response, {"Cola" : "20", "Bier" : "17", "Mettbroetchen" : "42"});
+}
+function setSummary(response) {
+	put(response, {"Fahrzeug" : "Klein", "Verpflegung" : "20 Cola, 17 Bier, 42 Mettbroetchen", "Helfer" : "1 Elektriker, 1 Entertainer", "Moebel" : "2 kleine Stuehle, 1 mittlerer Tisch, 1 grosser Tisch, 17 kleine Kartons, 10 große Kartons", 
+	"Kosten" : "3141,59 Euro"});
 }
 function nextPage(response) {
 	put(response, {"next" : "true"});

@@ -68,18 +68,18 @@ var intervalID = setInterval(update, 200);
 var dbname = "placeholder";
 var dburl = "http://127.0.0.1:5984/" + dbname + "/";
 var handlers = {
-	"destination" : updateDestination,
+	"moebel" : updateMoebel,
 	"next" : nextPage,
 	"back" : previousPage,
 	// add further handlers here
 };
 
-function updateDestination(response) {
-	document.getElementById('name').value = response.Name;
-	document.getElementById('str').value = response.StrUndNummer;
-	document.getElementById("plz").value = response.Plz;
-	document.getElementById("ort").value = response.Ort;
-	document.getElementById("land").value = response.Land;
+function updateMoebel(response) {
+	document.getElementById("stuhlklein").value = response.StuhlS;
+	document.getElementById("tischmittel").value = response.TischM;
+	document.getElementById("tischgroß").value = response.TischB;
+	document.getElementById("kartonklein").value = response.KartonS;
+	document.getElementById("kartongroß").value = response.KartonB;
 }
 
 function nextPage(response) {

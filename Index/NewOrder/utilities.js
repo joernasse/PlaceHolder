@@ -68,19 +68,18 @@ var intervalID = setInterval(update, 200);
 var dbname = "placeholder";
 var dburl = "http://127.0.0.1:5984/" + dbname + "/";
 var handlers = {
-	"destination" : updateDestination,
+	"utilities" : updateUtilities,
 	"next" : nextPage,
 	"back" : previousPage,
 	// add further handlers here
 };
 
-function updateDestination(response) {
-	document.getElementById('name').value = response.Name;
-	document.getElementById('str').value = response.StrUndNummer;
-	document.getElementById("plz").value = response.Plz;
-	document.getElementById("ort").value = response.Ort;
-	document.getElementById("land").value = response.Land;
+function updateUtilities(response) {
+	document.getElementById('cola').value = response.Cola;
+	document.getElementById('bier').value = response.Bier;
+	document.getElementById('broetchen').value = response.Mettbroetchen;
 }
+
 
 function nextPage(response) {
 }
