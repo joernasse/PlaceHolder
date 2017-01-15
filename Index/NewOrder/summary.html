@@ -1,62 +1,66 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="summary.js"></script>
+﻿<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="function.js"></script>
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 
 
 
-<body>
+<body onload="summaryCalc()">
 <div class="flex-head">
-<div class="flex-headitem">Start</div>
-<div class="flex-headitem">Ziel</div>
-<div class="flex-headitem">Möbel</div>
-<div class="flex-headitem">Fahrzeug</div>
-<div class="flex-headitem">Helfer</div>
-<div class="flex-headitem">Utensilien</div>
-<div class="flex-headitem" style="background:green">Bestätigen</div>
+    <div class="flex-headitem"  onclick="location.href='adresse.html'"}">Start/Ziel</div>
+    <div class="flex-headitem" onclick="location.href='moebel.html'"}">Möbel</div>
+    <div class="flex-headitem" onclick="location.href='fahrzeug.html'">Fahrzeug</div>
+    <div class="flex-headitem"  onclick="location.href='helfer.html'">Helfer</div>
+    <div class="flex-headitem"  onclick="location.href='tools.html'">Tools</div>
+    <div class="flex-headitem" style="background:lightblue" onclick ="location.href='summary.html'">Bestätigen</div>
 </div>
-<!-- Diesen obenren Block hier oben einfach Kopieren für die Kopfzeile PART2-->
-
-<div class="flexgros2-container">
+     <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+<div class="flexgros-container">
     <h1>Übersicht</h1>
-    <div class="flexMC-container">
-        <h2>Fahrzeug</h2>        
-            <textarea id="car"></textarea></div>
-    <div class="flexMC-container">
+    <div class="flexM-container">
+        <h2>Adresse</h2>
+        <label>Startadresse</label><br />
+           <textarea id="startsummary"></textarea>
+        <label>Zieladresse</label><br />
+            <textarea id="zielsummary"></textarea>
+
+    </div>
+    <div class="flexM-container">
+        <h2>Fahrzeug</h2>
+        <img id="imgcarsummary"class="medium-image" />        
+    </div>
+            
+    <div class="flexM-container">
         <h2>Helfer</h2>
-           <textarea id="helfer"></textarea></div>
-    <div class="flexMC-container">
+           <textarea id="helfersummary"></textarea>
+
+    </div>
+    <div class="flexM-container">
         <h2>Werkzeug& Verpflegung</h2>
         <div class="sepAuto-container">
             <h3>Werkzeuge</h3>
-            <textarea id="box"> Standard Box</textarea>
+            <textarea id="boxsummary"> Standard Box</textarea>
         </div>
         <div class="sepAuto-container">
             <h3>Verpflegung</h3>
-            <textarea id="essen"></textarea>
+            <textarea id="essensummary"></textarea>
         </div>
         </div>
-    <div class="flexMC-container">
+    <div class="flexM-container">
         <h2>Möbel</h2>
-        <textarea id="moebel"></textarea>
+        <textarea id="moebelsummary"></textarea>
     </div>
-    <div class="flexMC-container">
+    <div class="flexM-container">
         <h2>Kosten</h2>
-        <textarea id="kosten"></textarea>
+        <textarea id="kostensummary"></textarea>
     </div>
 </div>				
 
-<div class="flex-head">
-<div class="flex-headitem"><button class=button type=button onclick="location.href='utilities.html'">Zurück</button></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"><button class=button type=button onclick="location.href='../index.html'">Weiter</button></div>
+	    <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+<div class="flex-bottomitem">
+    <button class=button type=button onclick="location.href='tools.html'" style="margin-left:5px">Zurück</button>
+    <button class=button type=button onclick="location.href='index.html'" style="margin-right:5px">Weiter</button>
 </div>
-	    
-  
             
 </body></html>

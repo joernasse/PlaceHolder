@@ -1,59 +1,86 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- saved from url=(0084)file:///C:/Users/Christopher/Documents/GitHub/PlaceHolder/Index/NewOrder/moebel.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="moebel.js"></script>
+<script type="text/javascript" src="function.js"></script>
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-
-
-
 <body>
 
 <div class="flex-head">
-<div class="flex-headitem">Start</div>
-<div class="flex-headitem">Ziel</div>
-<div class="flex-headitem" style="background:green">Möbel</div>
-<div class="flex-headitem">Fahrzeug</div>
-<div class="flex-headitem">Helfer</div>
-<div class="flex-headitem">Utensilien</div>
-<div class="flex-headitem">Bestätigen</div>
+    <div class="flex-headitem" onclick="location.href='adresse.html'"}">Start/Ziel</div>
+    <div class="flex-headitem" style="background:lightblue" onclick="location.href='moebel.html'"}">Möbel</div>
+    <div class="flex-headitem" onclick="location.href='fahrzeug.html'">Fahrzeug</div>
+    <div class="flex-headitem" onclick="location.href='helfer.html'">Helfer</div>
+    <div class="flex-headitem" onclick="location.href='tools.html'">Tools</div>
+    <div class="flex-headitem"onclick="location.href='summary.html'">Bestätigen</div>
 </div>
-<!-- Diesen obenren Block hier oben einfach Kopieren für die Kopfzeile PART2-->
-
 <center><h1>Möbel auswählen</h1></center>
 
-<div class="flexgros-container">
+    <div class="flexgros-container">
+        <div class="flexM-container">
+            <div style="margin-bottom: 10px">
+                <label for="str">
+                    Stuhl:
+                    <br />
+                    <label>klein:</label>
+                    <input id="stuhlk" style="width: 20px; margin-right: 5px" />
+                    <label>mittel:</label>
+                    <input id="stuhlm" style="width: 20px; margin-right: 5px" />
+                    <label>groß:</label>
+                    <input id="stuhlg" style="width: 20px; margin-right: 5px" />
+            </div>
 
-	<div class="flexM-container">
-	
-		<div class="sep-container">Stuhl:    klein      <b>-</b> <input type="text" name="stuhlklein" id="stuhlklein" style="width:15px"> <b>+</b> /  mittel <b>-</b>  <input type="text" name="stuhlmittel" id="stuhlmittel" style="width:15px"> / groß <b>-</b>  <input type="text" name="stuhlgroß" id="stuhlgroß" style="width:15px">  <b>+</b> <br> </div>
-		<div class="sep-container">Tisch:klein <b>-</b> <input type="text" name="tischklein" id="tischklein" style="width:15px"> <b>+</b> /  mittel <b>-</b>  <input type="text" name="tischmittel" id="tischmittel" style="width:15px"> / groß <b>-</b>  <input type="text" name="tischgroß" id="tischgroß" style="width:15px"> <b>+</b>  <br></div>
-		<div class="sep-container">Schrank: klein <b>-</b> <input type="text" name="schrankklein" id="schrankklein" style="width:15px"> <b>+</b> /  mittel <b>-</b>  <input type="text" name="schrankmittel" id="schrankmittel" style="width:15px"> / groß <b>-</b>  <input type="text" name="schrankgroß" id="schrankgroß" style="width:15px"> <b>+</b>  <br></div>
-		<div class="sep-container">Karton: klein <b>-</b> <input type="text" name="kartonklein" id="kartonklein" style="width:15px"> <b>+</b> / mittel <b>-</b>  <input type="text" name="kartonmittel" id="kartonmittel" style="width:15px"> / groß <b>-</b>  <input type="text" name="kartongroß" id="kartongroß" style="width:15px"> <b>+</b> <br></div>
-		<div class="sep-container">Teppich: klein <b>-</b> <input type="text" name="teppichklein" id="teppichklein" style="width:15px"> <b>+</b> / mittel <b>-</b>  <input type="text" name="teppichmittel" id="teppichmittel" style="width:15px"> / groß <b>-</b>  <input type="text" name="teppichgroß" id="teppichgroß" style="width:15px"> <b>+</b> <br></div>
- 
-	
-	</div>
-	
-	<div class="flex2-container">
-		
-		<div class="button"> <button class="button" type="button" id="button1">Foto import</button></div><br>
-		<div class="button"><button class="button" type="button" id="button2">Inspektor bestellen</button></div>
+            <div style="margin-bottom: 20px">
+                <label for="str">
+                    Tisch:
+                    <br />
+                    <label>klein:</label>
+                    <input id="tischk" style="width: 20px; margin-right: 5px" />
+                    <label>mittel:</label>
+                    <input id="tischm" style="width: 20px; margin-right: 5px" />
+                    <label>groß:</label>
+                    <input id="tischg" style="width: 20px; margin-right: 5px" />
+            </div>
 
-	</div>
+            <div style="margin-bottom: 20px">
+                <label for="str">
+                    Schrank:
+                    <br />
+                    <label>klein:</label>
+                    <input id="schrankk" style="width: 20px; margin-right: 5px" />
+                    <label>mittel:</label>
+                    <input id="schrankm" style="width: 20px; margin-right: 5px" />
+                    <label>groß:</label>
+                    <input id="schrankg" style="width: 20px; margin-right: 5px" />
+            </div>
 
-</div>
+            <div style="margin-bottom: 20px">
+                <label for="str">
+                    Bett:
+                    <br />
+                    <label>klein:</label>
+                    <input id="bettk" style="width: 20px; margin-right: 5px" />
+                    <label>mittel:</label>
+                    <input id="bettm" style="width: 20px; margin-right: 5px" />
+                    <label>groß:</label>
+                    <input id="bettg" style="width: 20px; margin-right: 5px" />
+            </div>
+            <div style="border-bottom:double"></div>
+            <div class="button">
+                <button class="button" type="button" id="btnFotoImport" style="margin-right:10px">Foto import</button>       
+                <button class="button" type="button" id="btnInspektr">Inspektor bestellen</button>
+             </div>             
+ </div>
+        </div>
+                    <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
 
-<div class="flex-head">
-<div class="flex-headitem"><button class=button type=button onclick="location.href='Ziel.html'">Zurück</button></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"><button class=button type=button onclick="location.href='fahrzeug.html'">Weiter</button></div>
-</div>
+    <div class="flex-bottomitem">
+            <button class=button type=button onclick="location.href='adresse.html'" style="margin-left:5px">Zurück</button>
+            <button class=button type=button onclick="savemoebel()"; style="margin-right:5px">Weiter</button>
+     </div>
+
+
+
 
 <!-- Der Block hier oben ist für die Zurück und Weiter Knöpfe -->
 

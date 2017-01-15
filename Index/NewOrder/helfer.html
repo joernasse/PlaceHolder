@@ -1,61 +1,49 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- saved from url=(0084)file:///C:/Users/Christopher/Documents/GitHub/PlaceHolder/Index/NewOrder/moebel.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="helfer.js"></script>
+<script type="text/javascript" src="function.js"></script>
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-
-
-
 <body>
 
 <div class="flex-head">
-<div class="flex-headitem">Start</div>
-<div class="flex-headitem">Ziel</div>
-<div class="flex-headitem">Möbel</div>
-<div class="flex-headitem">Fahrzeug</div>
-<div class="flex-headitem" style="background:green">Helfer</div>
-<div class="flex-headitem">Utensilien</div>
-<div class="flex-headitem">Bestätigen</div>
+    <div class="flex-headitem"  onclick="location.href='adresse.html'"}">Start/Ziel</div>
+    <div class="flex-headitem" onclick="location.href='moebel.html'"}">Möbel</div>
+    <div class="flex-headitem" onclick="location.href='fahrzeug.html'">Fahrzeug</div>
+    <div class="flex-headitem" style="background:lightblue" onclick="location.href='helfer.html'">Helfer</div>
+    <div class="flex-headitem" onclick="location.href='tools.html'">Tools</div>
+    <div class="flex-headitem"onclick="location.href='summary.html'">Bestätigen</div>
 </div>
-<!-- Diesen obenren Block hier oben einfach Kopieren für die Kopfzeile PART2-->
+     <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
 
 <center><h1>Welche Helfer werden benötigt?</h1></center>
 
 <div class="flexgros-container">
 
-	<div class="flexM-container">
-	
-		<div class="sep-container">Allgemeine Helfer:    <b>-</b> <input type="text" name="stuhlklein" style="width:10px"> <b>+</b> <br> </div>
-		<div class="sep-container">Elektriker <b>-</b> <input type="text" id="elektriker" name="tischklein" style="width:10px">  <b>+</b>  <br></div>
-		<div class="sep-container">Klempner: <b>-</b> <input type="text" name="schrankklein" style="width:10px"> <b>+</b>   <br></div>
-		<div class="sep-container">Tischler:  <b>-</b> <input type="text" name="kartonklein" style="width:10px"> <b>+</b>  <br></div>
-		<!--<div class="sep-container">Teppich: klein <b>-</b> <input type="text" name="teppichklein" style="width:10px"> <b>+</b> / mittel <b>-</b>  <input type="text" name="teppichmittel" style="width:10px"> / groß <b>-</b>  <input type="text" name="teppichgroß" style="width:10px"> <b>+</b> <br></div>-->
-		Sonstige Helfer:<br>
-		<div class="sep-container"><input type="text" id="sonstigeHelfer" name="tischklein" style="width:200px" margin-top:"5px" > </div> 
-	
-	</div>
-	
-	<!--<div class="flex2-container">
-		
-		
-
-	</div>-->
-
+    <div class="flexM-container">
+        <div style="margin-bottom: 20px">
+            <label>Allgemeine Helfer:</label>
+            <input id="aH" style="width: 20px; margin-right: 5px" />
+        </div>
+        <div style="margin-bottom: 20px">
+            <label>Elektriker:</label>
+            <input id="elektriker" style="width: 20px; margin-right: 5px" />
+        </div>
+        <div style="margin-bottom: 20px">
+            <label>Tischler:</label>
+            <input id="tischler" style="width: 20px; margin-right: 5px" />
+        </div>
+        <div style="margin-bottom: 20px">
+            <label>Klempner:</label>
+            <input id="klempner" style="width: 20px; margin-right: 5px" />
+        </div>
+    </div>
+    </div>
+<div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+<div class="flex-bottomitem">
+    <button class=button type=button onclick="location.href='fahrzeug.html'" style="margin-left:5px">Zurück</button>
+    <button class=button type=button onclick="savehelfer()" style="margin-right:5px">Weiter</button>
 </div>
-
-<div class="flex-head">
-<div class="flex-headitem"><button class=button type=button onclick="location.href='fahrzeug.html'">Zurück</button></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"></div>
-<div class="flex-headitem"><button class=button type=button onclick="location.href='utilities.html'">Weiter</button></div>
-</div>
-
-<!-- Der Block hier oben ist für die Zurück und Weiter Knöpfe -->
 
 
 

@@ -1,0 +1,84 @@
+﻿<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="function.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+
+
+<body>
+
+
+<div class="flex-head">
+    <div class="flex-headitem"  onclick="location.href='adresse.html'"}">Start/Ziel</div>
+    <div class="flex-headitem" onclick="location.href='moebel.html'"}">Möbel</div>
+    <div class="flex-headitem" onclick="location.href='fahrzeug.html'">Fahrzeug</div>
+    <div class="flex-headitem"  onclick="location.href='helfer.html'">Helfer</div>
+    <div class="flex-headitem" style="background:lightblue" onclick="location.href='tools.html'">Tools</div>
+    <div class="flex-headitem"onclick="location.href='summary.html'">Bestätigen</div>
+</div>
+     <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+
+<center><h1>Tools & Verpflegung Auswählen</h1></center>
+
+    <div class="flexgros-container">
+        <div class="flexM-container">
+            <h2>Verpflegung</h2>
+            <div style="border-bottom: dotted">
+                <h3>Getränke</h3>
+                <div class="sep-container">
+                    Cola:
+                
+                <input type="text" id="cola" name="cola" style="width: 20px">
+                </div>
+                <div class="sep-container">
+                    Fanta:
+                
+                <input type="text" id="fanta" style="width: 20px">
+                </div>
+                <div class="sep-container">
+                    Bier:
+                
+                <input type="text" id="bier" name="bier" style="width: 20px">
+                </div>
+            </div>
+
+            <div class="flexM-container">
+                <h3>Essen</h3>
+                <div class="sep-container">
+                    Mettbroetchen:
+                
+                <input type="text" id="broetchen" name="broetchen" style="width: 20px">
+                </div>
+                <div class="sep-container">
+                    Salzstangen:
+                
+                <input type="text" id="salzS" style="width: 20px">
+                </div>
+                <div class="sep-container">
+                    Hotdogs:
+                
+                <input type="text" id="hotD" style="width: 20px">
+                </div>
+            </div>
+        </div>
+        <div class="flexM-container" style="border-left: dotted">
+            <h2>Werkzeug Service</h2>ex
+            <br>
+            <text>In jedem von unseren Fahrzeugen liegt eine Standard Werkzeug Box</text>
+            <button>Werkzeug Box Info</button>
+
+            <div style="margin-top: 20px">
+                <label>Weitere Werkzeuge:</label><br />
+                <textarea id="extratool"></textarea></div>
+
+        </div>
+    </div>				
+	    <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+<div class="flex-bottomitem">
+    <button class=button type=button onclick="location.href='helfer.html'" style="margin-left:5px">Zurück</button>
+    <button class=button type=button onclick="savetool()" style="margin-right:5px">Weiter</button>
+</div>
+
+            
+</body></html>

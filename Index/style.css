@@ -8,31 +8,36 @@
     margin: 5px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .flex-headitem {
     display: -webkit-flex;
-    width: 100px;
-    height: 50px;
+    width: inherit;
+    height: 30px;
+    margin:20px;
     background-color: white;
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-
-    
+    border:outset;
 }
-
+.medium-image {
+    width: 300px;
+    height: 150px;
+}
+.flex-bottomitem {
+    display: -webkit-flex;
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-bottom: 5px;
+    text-align: center;    
+}
 .flexgros-container {
     display: -webkit-flex;
     flex-direction: row;
-
     
     width: 1200px;
-    height: 500px;
-  
-	margin-top: 200px;
+    height: auto;  
+	margin-top: auto;
     background-color:white;
 	text-align:center;
 	margin-left: auto;
@@ -58,7 +63,7 @@
 .flex-container {
     display: -webkit-flex;
     flex-direction: row;
-    width: 1000px;
+    width: auto;
     height: 500px;
     background-color: white;
     margin: 5px;
@@ -74,10 +79,9 @@
     flex-direction: row;
    
     width: 500px;
-    height: 200px;
+    height: auto;
     background-color: white;
     margin: 5px;
-    
     text-align:center;
     margin-left: auto;
     margin-right: auto;
@@ -103,11 +107,12 @@
 
 .flex-temp {
     background-color: white;
-    width: 300px;
-    height: 200px;
+    width: auto;
+    height: auto;
     margin: auto;
+    margin-left: 20px;
     text-align: center;
-    align-content: right;
+    align-content: right ;
     text-align: right;
 }
 
@@ -228,13 +233,12 @@
 }
 
 .button{
-	width: 100px;
+	width: auto;
     height: 45px;
-    margin: 5px;
-	display: block;
+    margin: 15px;
     margin-left: auto;
     margin-right: auto;
-	/*align-content: center;*/
+
 
 	
 }
