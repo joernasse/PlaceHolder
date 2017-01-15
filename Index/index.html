@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript" src="index.js"></script>
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><head>
+<script type="text/javascript" src="function.js"></script>
 </head>
 
 <style>
@@ -79,19 +78,18 @@
 </style>
 
 
-<body>
+<body onload="initlocalstorage()">
 
 <h1>PlaceHolder</h1>
+    <div style="border-bottom:double"></div>
 
 
 
 <div class="flex-container" margin-top:"100px">
- <button class="button" type="button" id="button1" onclick="location.href='newOrder/start.html'">Neuer Auftrag</button> <br>
+ <button class="button" type="button" id="button1" onclick="location.href='newOrder/adresse.html'">Neuer Auftrag</button> <br>
  <button class="button" type="button" id="button2"onclick="location.href='BestehendeAuftraege/summary.html'">Bestehende Aufträge</button>	 <br>  
- <button class="button" type="button" id="button3" onclick="location.href='MoebelBestellen/index.html'">Möbel bestellen</button>	 <br> 
-
-
-</div>
+ <button style="margin-bottom:5px" class="button" type="button" id="button3" onclick="location.href='MoebelBestellen/index.html'">Möbel bestellen</button>	 <br> 
+ </div>
 
 </body>
 </html>

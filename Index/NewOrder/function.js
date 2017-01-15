@@ -1,4 +1,6 @@
 
+
+
 function saveadress() {
     localStorage.setItem("startAdresse", document.getElementById("startStr").value + "\n" + document.getElementById("startPlz").value + document.getElementById("startOrt").value + "\n" + document.getElementById("startLand").value);
     localStorage.setItem("zielAdresse", document.getElementById("zielStr").value + "\n" + document.getElementById("zielPlz").value+" " + document.getElementById("zielOrt").value + "\n" + document.getElementById("zielLand").value);
@@ -36,7 +38,7 @@ function loadsmaller() {
                 alert("Grössere Fahrzeuge sind nicht verfügbar.");
             }
     }
-    function savemoebel() {
+    function savemoebel(){
         localStorage.setItem("stuhl","Stuhl"+"\n"+"klein: "+document.getElementById("stuhlk").value + "\n" +
                                     "mittel: " + document.getElementById("stuhlm").value + "\n" +
                                     "gross: " + document.getElementById("stuhlg").value + "\n");
@@ -66,7 +68,7 @@ function loadsmaller() {
     }
     function savetool() {
         localStorage.setItem("essen", "Cola: " + document.getElementById("cola").value + "\n" +
-                                    "Fanta: " + document.getElementById("fanta ").value + "\n" +
+                                    "Fanta: " + document.getElementById("fanta").value + "\n" +
                                     "Bier: " + document.getElementById("bier").value + "\n\n" +
                                     "Salzstangen: " + document.getElementById("salzS").value + "\n" +
                                     "HotDogs: " + document.getElementById("hotD").value + "\n" +
@@ -97,4 +99,18 @@ function loadsmaller() {
                                                                                localStorage.getItem("bett");
 
     }
+    function loadoldorders(){
+        document.getElementById("order1").value=localStorage.getItem("order1");
+        document.getElementById("ordercar1").src=localStorage.getItem("ordercar1");
+    }
 
+    function finishorder()
+    {
+        localStorage.setItem("orderone", "Startadresse " + document.getElementById("startsummary").value + "\n" +"Zieladresse " + document.getElementById("zielsummary").value + "\n" + "Helfer " + document.getElementById("helfersummary").value + "\n" +"Verpflegung " + document.getElementById("essensummary").value + "\n" +"Werkzeug " + document.getElementById("boxsummary").value + "\n" + "Möbel " + document.getElementById("moebelsummary").value);
+ 
+        localStorage.setItem("ordercarone", document.getElementById("imgcarsummary").src);
+        altert("Bestellung erfolgreich");
+    }
+
+    
+    

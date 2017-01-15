@@ -7,12 +7,12 @@
 <body>
 
 <div class="flex-head">
-    <div class="flex-headitem" onclick="location.href='adresse.html'"}">Start/Ziel</div>
-    <div class="flex-headitem" style="background:lightblue" onclick="location.href='moebel.html'"}">Möbel</div>
-    <div class="flex-headitem" onclick="location.href='fahrzeug.html'">Fahrzeug</div>
-    <div class="flex-headitem" onclick="location.href='helfer.html'">Helfer</div>
-    <div class="flex-headitem" onclick="location.href='tools.html'">Tools</div>
-    <div class="flex-headitem"onclick="location.href='summary.html'">Bestätigen</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='adresse.html'">Start/Ziel</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'lightblue'"; onclick="location.href='moebel.html'"; style="background:lightblue"}">Möbel</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='fahrzeug.html'">Fahrzeug</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='helfer.html'">Helfer</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='tools.html'">Tools</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick ="location.href='summary.html'">Bestätigen</div>
 </div>
 <center><h1>Möbel auswählen</h1></center>
 
@@ -23,11 +23,11 @@
                     Stuhl:
                     <br />
                     <label>klein:</label>
-                    <input id="stuhlk" style="width: 20px; margin-right: 5px" />
+                    <input id="stuhlk" style="width: 20px; margin-right: 5px" value="0" />
                     <label>mittel:</label>
-                    <input id="stuhlm" style="width: 20px; margin-right: 5px" />
+                    <input id="stuhlm" style="width: 20px; margin-right: 5px" value="0" />
                     <label>groß:</label>
-                    <input id="stuhlg" style="width: 20px; margin-right: 5px" />
+                    <input id="stuhlg" style="width: 20px; margin-right: 5px"value="0"  />
             </div>
 
             <div style="margin-bottom: 20px">
@@ -35,11 +35,11 @@
                     Tisch:
                     <br />
                     <label>klein:</label>
-                    <input id="tischk" style="width: 20px; margin-right: 5px" />
+                    <input id="tischk" style="width: 20px; margin-right: 5px" value="0" />
                     <label>mittel:</label>
-                    <input id="tischm" style="width: 20px; margin-right: 5px" />
+                    <input id="tischm" style="width: 20px; margin-right: 5px" value="0"" />
                     <label>groß:</label>
-                    <input id="tischg" style="width: 20px; margin-right: 5px" />
+                    <input id="tischg" style="width: 20px; margin-right: 5px"value="0"  />
             </div>
 
             <div style="margin-bottom: 20px">
@@ -47,11 +47,11 @@
                     Schrank:
                     <br />
                     <label>klein:</label>
-                    <input id="schrankk" style="width: 20px; margin-right: 5px" />
+                    <input id="schrankk" style="width: 20px; margin-right: 5px"value="0"  />
                     <label>mittel:</label>
-                    <input id="schrankm" style="width: 20px; margin-right: 5px" />
+                    <input id="schrankm" style="width: 20px; margin-right: 5px" value="0" />
                     <label>groß:</label>
-                    <input id="schrankg" style="width: 20px; margin-right: 5px" />
+                    <input id="schrankg" style="width: 20px; margin-right: 5px" value="0" />
             </div>
 
             <div style="margin-bottom: 20px">
@@ -59,16 +59,16 @@
                     Bett:
                     <br />
                     <label>klein:</label>
-                    <input id="bettk" style="width: 20px; margin-right: 5px" />
+                    <input id="bettk" style="width: 20px; margin-right: 5px"value="0"  />
                     <label>mittel:</label>
-                    <input id="bettm" style="width: 20px; margin-right: 5px" />
+                    <input id="bettm" style="width: 20px; margin-right: 5px" value="0" />
                     <label>groß:</label>
-                    <input id="bettg" style="width: 20px; margin-right: 5px" />
+                    <input id="bettg" style="width: 20px; margin-right: 5px"value="0"  />
             </div>
             <div style="border-bottom:double"></div>
             <div class="button">
-                <button class="button" type="button" id="btnFotoImport" style="margin-right:10px">Foto import</button>       
-                <button class="button" type="button" id="btnInspektr">Inspektor bestellen</button>
+                <button class="button" type="button" id="btnFotoImport"onclick="alert('Nicht implementiert!')"; style="margin-right:10px">Foto import</button>       
+                <button class="button" type="button" id="btnInspektr"onclick="alert('Nicht implementiert!')";>Inspektor bestellen</button>
              </div>             
  </div>
         </div>

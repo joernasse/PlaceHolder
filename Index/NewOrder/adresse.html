@@ -8,37 +8,36 @@
 
 <body>
 <div class="flex-head">
-    <div class="flex-headitem" style="background:lightblue" onclick="location.href='adresse.html'"}">Start/Ziel</div>
-    <div class="flex-headitem" onclick="location.href='moebel.html'"}">Möbel</div>
-    <div class="flex-headitem" onclick="location.href='fahrzeug.html'">Fahrzeug</div>
-    <div class="flex-headitem" onclick="location.href='helfer.html'">Helfer</div>
-    <div class="flex-headitem" onclick="location.href='tools.html'">Tools</div>
-    <div class="flex-headitem"onclick="location.href='summary.html'">Bestätigen</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'lightblue'"; onclick="location.href='adresse.html'"; style="background:lightblue"}">Start/Ziel</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='moebel.html'"}">Möbel</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='fahrzeug.html'">Fahrzeug</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='helfer.html'">Helfer</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='tools.html'">Tools</div>
+    <div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick ="location.href='summary.html'">Bestätigen</div>
 </div>
      <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
 
 <center><h1>Geben Sie die Start- & Zieladresse ein</h1></center>
     <div class="flexgros-container">
         <div class="flexM-container">
-             <input type="button" value="Ort via GPS bestimmen" style="width: 200px; height: 100px">
+             <input type="button" value="Ort via GPS bestimmen" style="width: 200px; height: 100px" onclick="alert('Nicht implementiert!')">
             <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
             <div class="flex-temp">
                     <label ">Startadresse</label><br />
-                    <label>Name</label><input id="name" name="name"></input><br>
-                    <label for="str">Straße und Nr.: <input id="startStr" name="str"></label><br>
-                    <label for="plz">Plz: <input id ="startPlz"></label><br>
-                    <label for="ort">Ort: <input id="startOrt"></label><br>
-                    <label for="land">Land: <input  id="startLand"></label><br>
+                    <label  for="str">Straße und Nr.: <input id="startStr"value="default" name="str"></label><br>
+                    <label for="plz">Plz: <input id ="startPlz"value="default"></label><br>
+                    <label for="ort">Ort: <input id="startOrt"value="default"></label><br>
+                    <label for="land">Land: <input  id="startLand" value="default"></label><br>
             </div>
             <div class="flex-temp">
                     <label ">Zieladresse</label><br />
-                    <label for="str">Straße und Nr.: <input id="zielStr" name="str"></label><br>
-                    <label for="plz">Plz: <input  id ="zielPlz"></label><br>
-                    <label for="ort">Ort: <input  id="zielOrt"></label><br>
-                    <label for="land">Land: <input  id="zielLand"></label><br>
+                    <label for="str">Straße und Nr.: <input id="zielStr" name="str" value="default"></label><br>
+                    <label for="plz">Plz: <input  id ="zielPlz" value="default"></label><br>
+                    <label for="ort">Ort: <input  id="zielOrt" value="default"></label><br>
+                    <label for="land">Land: <input  id="zielLand" value="default"></label><br>
             </div>
             <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
-            <input class="button" type="button" id="startSet" value="Übernehmen" style="width: 100px; height: 60px" onclick="setAdress()"< />
+            <input class="button" type="button" id="startSet" value="Übernehmen" style="width: 100px;  border-color: 60px;" onclick="setAdress()"< />
            
         </div>
         </div>
@@ -48,8 +47,6 @@
     <button class=button type=button onclick="location.href='index.html'" style="margin-left:5px">Zurück</button>
     <button class=button type=button onclick="saveadress()" style="margin-right:5px">Weiter</button>
 </div>
-
-<!-- Der Block hier oben ist für die Zurück und Weiter Knöpfe -->
-
 </body>
 </html>
+
