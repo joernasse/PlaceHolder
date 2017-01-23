@@ -238,7 +238,10 @@
     margin: 15px;
     margin-left: auto;
     margin-right: auto;
-
-
-	
 }
+
+.textarea{
+  width: 200px;
+  height: 400px;
+}
+	

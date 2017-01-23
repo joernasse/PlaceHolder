@@ -8,7 +8,7 @@ function saveadress() {
 }
 function loadsmaller() {
     if (document.getElementById("carname").title == "k") {
-        alert("Kleinere Fahrzeuge sind nicht verfügbar.");
+        alert("Kleinere Fahrzeuge sind nicht verf\u00fcgbar.");
     } else
         if (document.getElementById("carname").title == "g") {
         document.getElementById("carname").title = "m";
@@ -30,29 +30,29 @@ function loadsmaller() {
         } else
             if (document.getElementById("carname").title == "m") {
             document.getElementById("carname").title = "g";
-            document.getElementById("carname").innerText = "grosser LKW";
+            document.getElementById("carname").innerText = "gro\u00dfer LKW";
             document.getElementById("carimg").src = "gLKW.jpg";
 
         }else
             if (document.getElementById("carname").title == "g") {
-                alert("Grössere Fahrzeuge sind nicht verfügbar.");
+                alert("Gr\u00f6\u00dfere Fahrzeuge sind nicht verf\u00fcgbar.");
             }
     }
     function savemoebel(){
         localStorage.setItem("stuhl","Stuhl"+"\n"+"klein: "+document.getElementById("stuhlk").value + "\n" +
                                     "mittel: " + document.getElementById("stuhlm").value + "\n" +
-                                    "gross: " + document.getElementById("stuhlg").value + "\n");
+                                    "gro\u00df: " + document.getElementById("stuhlg").value + "\n");
 
         localStorage.setItem("tisch", "Tisch"+"\n"+"klein: " + document.getElementById("tischk").value + "\n" +
                                     "mittel: " + document.getElementById("tischm").value + "\n" +
-                                    "gross: " + document.getElementById("tischg").value + "\n");
+                                    "gro\u00df: " + document.getElementById("tischg").value + "\n");
         localStorage.setItem("schrank", "Schrank" + "\n" + "klein: " + document.getElementById("schrankk").value + "\n" +
                                     "mittel: " + document.getElementById("schrankm").value + "\n" +
-                                    "gross: " + document.getElementById("schrankg").value + "\n");
+                                    "gro\u00df: " + document.getElementById("schrankg").value + "\n");
 
         localStorage.setItem("bett", "Bett" + "\n" + "klein: " + document.getElementById("bettk").value + "\n" +
                                     "mittel: " + document.getElementById("bettm").value + "\n" +
-                                    "gross: " + document.getElementById("bettg").value + "\n");
+                                    "gro\u00df: " + document.getElementById("bettg").value + "\n");
         document.location.href = "fahrzeug.html";
     }
     function savecar() {
@@ -72,9 +72,9 @@ function loadsmaller() {
                                     "Bier: " + document.getElementById("bier").value + "\n\n" +
                                     "Salzstangen: " + document.getElementById("salzS").value + "\n" +
                                     "HotDogs: " + document.getElementById("hotD").value + "\n" +
-                                    "Mettbrötchen: " + document.getElementById("broetchen").value);
+                                    "Mettbr\u00f6tchen: " + document.getElementById("broetchen").value);
         localStorage.setItem("werk", "Werkzeug: Standard Werkzeug Box"+ "\n" +
-                                    "Weitere Wünsche: " + document.getElementById("extratool").value);
+                                    "Weitere W\u00fcnsche: " + document.getElementById("extratool").value);
         document.location.href = "summary.html";
     }
     function summaryCalc() {
@@ -109,7 +109,8 @@ function loadsmaller() {
         localStorage.setItem("orderone", "Startadresse " + document.getElementById("startsummary").value + "\n" +"Zieladresse " + document.getElementById("zielsummary").value + "\n" + "Helfer " + document.getElementById("helfersummary").value + "\n" +"Verpflegung " + document.getElementById("essensummary").value + "\n" +"Werkzeug " + document.getElementById("boxsummary").value + "\n" + "Möbel " + document.getElementById("moebelsummary").value);
  
         localStorage.setItem("ordercarone", document.getElementById("imgcarsummary").src);
-        altert("Bestellung erfolgreich");
+        alert("Bestellung erfolgreich");
+        location.href='../index.html'
     }
 
     
