@@ -61,7 +61,7 @@
 }
 
 .flex-container {
-    display: -webkit-flex;
+    display: -webkit-flex;F
     flex-direction: row;
     width: auto;
     height: 500px;
@@ -86,6 +86,29 @@
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.flexA-container{
+    display: -webkit-flex;
+	flex-direction: row;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+	margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexB-container{
+    background-color: white;
+	align-content: right;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+	text-align: center;
+	font-size: 18px;
+	align-content: right;
+	text-align: right;
 }
 
 .flexMC-container{
@@ -237,6 +260,27 @@
     height: 45px;
     margin: 15px;
     margin-left: auto;
+    margin-right: auto;
+}
+
+.button2{
+    width: 200px;
+    height: 45px;
+    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button-container{
+	display: -webkit-flex;
+    flex-direction: row;
+    
+    width: 500px;
+    height: auto;  
+	margin-top: auto;
+    background-color:white;
+	text-align:center;
+	margin-left: auto;
     margin-right: auto;
 }
 

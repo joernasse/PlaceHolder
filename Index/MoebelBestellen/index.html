@@ -1,92 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
 <script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<style>
-.flex-head {
-    display: -webkit-flex;
-	flex-direction: row;
-    width: 200px;
-    height: 60px;
-    background-color: white;
-	margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.flex-headitem {
-    display: -webkit-flex;
-    width: 100px;
-    height: 50px;
-    background-color: white;
-	margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-	text-align: center;
-
-	
-}
-
-<!-- Diesen obenren beiden flex container hier oben einfach kopieren für die Kopfzeile PART1-->
-
-.flex-container {
-    display: -webkit-flex;
-	flex-direction: row;
-    width: 1000px;
-    height: 500px;
-    background-color: white;
-	margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-	
-}
-
-.flex-temp {
-    background-color: white;
-	align-content: right;
-    width: 300px;
-    height: 200px;
-    margin: auto;
-	text-align: center;
-	font-size: 18px;
-	align-content: right;
-	text-align: right;
-}
-
-</style>
 
 
 <body>
 <div class="flex-head">
-<div class="flex-headitem" style="background:green">Ziel</div>
-<div class="flex-headitem">Möbel bestellen</div>
+<div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'lightblue'"; onclick="location.href='index.html'"; style="background:lightblue"}">Start/Ziel</div>
+<div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='Bestellung.html'"}">Möbel bestellen</div>
 </div>
-<!-- Diesen obenren Block hier oben einfach Kopieren für die Kopfzeile PART2-->
+ <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
 
 <center><h1>Wohin sollen die Möbel geliefert werden?</h1></center>
 
 
-<div class="flex-container" margin-top:"200px">
-<div class="flex-temp">
+<div class="flexA-container" margin-top:"200px">
+<div class="flexB-container">
  <form><label for="name">Name: <input id="name" name="name"></label><br>
  <label for="str">Straße und Nr.: <input id="str" name="str"></label><br>
  <label for="plz">Plz: <input id="plz" name ="plz"></label><br>
  <label for="ort">Ort: <input id="ort" name="ort"></label><br>
  <label for="land">Land: <input id="land" name="land"></label><br>
 </div>
-<div class="flex-temp">
+<div class="flexB-container">
 <input type="button" value="Ort über GPS bestimmen" style="width: 200px; height: 100px">
 </div>
 
 </div>
-<div class="flex-head">
-<div class="flex-headitem"><button class=button type=button onclick="location.href='../index.html'">Zurück</button></div>
-<div class="flex-headitem"><button class=button type=button onclick="location.href='Bestellung.html'">Weiter</button></div>
-</div>
+<div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+<div class="flex-bottomitem">
+<button class=button type=button onclick="location.href='../index.html'">Zurück</button>
+<button class=button type=button onclick="location.href='Bestellung.html'">Weiter</button>
 
 
 </body>

@@ -1,195 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
-<style>
-
-.flex-head {
-    display: -webkit-flex;
-    flex-direction: row;
-    width: 200px;
-    height: 60px;
-    background-color: white;
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.flex-headitem {
-    display: -webkit-flex;
-    width: 100px;
-    height: 50px;
-    background-color: white;
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    
-}
-
-.flexgros-container {
-    width: 1200px;
-    height: 500px;
-  
-	margin-top: 200px;
-    background-color:white;
-	text-align:center;
-	margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.flex-container {
-    display: -webkit-flex;
-	display: block;
-    flex-direction: column;
-   
-    width: 500px;
-    height: auto;
-    background-color: white;
-	margin: 5px;
-    
-	text-align:center;
-	margin-left: auto;
-    margin-right: auto;
-    float:left;
-    
-	
-}
-
-.flex2-container {
-    display: -webkit-flex;
-    display: block;
-
-    width: 400px;
-    height: 200px;
-    background-color: white;
-	margin: 5px;
-    
-	text-align:center;
-	margin-left: auto;
-    margin-right: auto;
-	
-	
-}
-
-
-.input{
-	width 20px;
-
-
-        
-
-}
-
-.sep-container{
-	
-	height:auto;
-	width: auto;
-	margin:20px;
-    display: block;
-    flex-direction:column;
-
-
-
-}
-
-.flex-titel {
-    background-color: green;
-    width: 600px;
-    height: 150px;
-    margin: 10px;
-	text-align: center;
-}
-
-.flex-temp {
-    background-color: green;
-    width: 150px;
-    height: 50px;
-    margin: auto;
-	text-align: center;
-	font-size: 18px;
-}
-.flex-temp2 {
-    background-color: green;
-    width: 200px;
-    height: 50px;
-    margin: auto;
-	text-align: center;
-	font-size: 22px;
-	font-color: darkred;
-}
-
-.flex-rest {
-    background-color: green;
-    width: 460px;
-    height: 100px;
-    margin: 10px;
-	text-align: center;
-	font-size: 30px;
-	
-}
-.flex-icon {
-    background-color: green;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-	text-align: center;
-	font-size: 22px;
-}
-
-.button{
-	width: 100px;
-    height: 45px;
-    margin: 5px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	/*align-content: center;*/
-
-	
-}
-
-
-</style>
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
 
 <div class="flex-head">
-<div class="flex-headitem">Ziel</div>
-<div class="flex-headitem" style="background:green">Möbel bestellen</div>
+<div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'white'"; onclick="location.href='index.html'"}">Ziel</div>
+<div class="flex-headitem" onmouseover="this.style.backgroundColor = 'yellow'"; onmouseout="this.style.backgroundColor = 'lightblue'"; onclick="location.href='Bestellung.html'" style="background:lightblue"}">Möbel bestellen</div>
 </div>
+ <div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
 
-<div class="flexgros-container">
+<div class="flexgros2-container">
 	<h1>Möbel bestellen</h1>
 	<p>bei unseren Partnern</p>
-	
-	<div class="flex-container">
-		<div class="button"> <button class="button" type="button" id="button1">Ikea</button></div>
-	</div>
-	<div class="flex-container">
-    	<div class="button"><button class="button" type="button" id="button2">Poco</button></div>
+
+    <div class="button-container">
+
+		<button class="button2" type="button" onclick="partnerEvent()" id="button1">Ikea</button>
+
+    	<button class="button2" type="button" onclick="partnerEvent()" id="button2">Poco</button>
+
+    	<button class="button2" type="button" onclick="partnerEvent()" id="button3">Möbel Hesse</button>        
     </div>
-	<div class="flex-container">
-    	<div class="button"> <button class="button" type="button" id="button3">Möbel Hesse</button></div>
-    </div>
-	<div class="flex-container">
-    	<div class="button"><button class="button" type="button" id="button4">Porta</button></div>
-    </div>
-	<div class="flex-container">
-    	<div class="button"> <button class="button" type="button" id="button5">Toom</button></div>
-    </div>
-	<div class="flex-container">
-    	<div class="button"><button class="button" type="button" id="button6">Scanto</button></div>
+
+    <div class="button-container">
+
+        <button class="button2" type="button" onclick="partnerEvent()" id="button4">Porta</button>
+
+    	<button class="button2" type="button" onclick="partnerEvent()" id="button5">Toom</button>
+
+    	<button class="button2" type="button" onclick="partnerEvent()" id="button6">Scanto</button>
     </div>
 </div>
-<div class="flex-head">
-<div class="flex-headitem"><button class=button type=button onclick="location.href='index.html'">Zurück</button></div>
-<div class="flex-headitem"><button class=button type=button onclick="location.href='../index.html'">Weiter</button></div>
+<div style="border-bottom:double;margin-bottom:10px;margin-top:10px"></div>
+<div class="flex-bottomitem">
+<button class=button type=button onclick="location.href='index.html'">Zurück</button>
+<button class=button type=button onclick="location.href='../index.html'">Weiter</button>
 </div>
         
 
 
 </body>
 </html>
+
